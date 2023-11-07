@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+    background-color: #8e8e8e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+#image {
+    top:0;
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#title {
+    position: relative;
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+    left: -5%;
+    margin-top: 200px;
+
+}
+
+#img-caption {
+    position: relative;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    left: 12%;
+    margin-top: 1px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#biography, #awards {
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+#biography, #filmography, #awards {
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+}
+
+#tribute-info, #movies, .poster, #row, #info {
+    display: flex;
+    flex-direction: row;
+}
+
+#tribute-info, #movies {
+    justify-content: center;
+    align-items: center;
+    padding: 0 90px 40px 90px;
+}
+
+
+#tribute-info img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    left: -8%;
+}
+
+#tribute-info p {
+    width: 800px;
+    line-height: 1.8;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#movies-left, #movies-right, .award {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#movies-left, #movies-right {
+    justify-content: center;
+    width: 488px;
+    padding: 20px;
+    margin: 18px 0;
+}
+
+.poster {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 14px rgba(81, 82, 82, 0.4);
+    width: 428px;
+}
+
+.poster img, .award img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #cccccc;
+}
+
+.poster ul {
+    padding-left: 30px;
+}
+
+#row {
+    justify-content: space-around;
+    margin: 20px 60px;
+    padding-bottom: 40px;
+}
+
+.award {
+    width: 250px;
+    padding: 20px;
+    background-color: #8e8e8e;
+    border-radius: 12px;
+    box-shadow: 5px 10px 14px rgba(81, 82, 82, 0.4);
+    margin: 38px 0;
+}
+
+.award p {
+    margin: 10px 0;
+}
+
+.award p:first-of-type {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 500px) {
+
+   
+    #tribute-info, #movies, #row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0px;
+    }
+
+    #tribute-info, #tribute-info p, #movies,
+    #movies-left, #movies-right {
+        width: 360px;
+    }
+
+    #movies-left, #movies-right {
+        margin: 0;
+        padding: 0;
+    }
+
+    .poster {
+        width: 330px;
+        padding: 10px;
+        margin: 25px 10px;
+    }
+
+    #row {
+        margin: 0;
+    }
+
+    .award {
+        width: 330px;
+        padding: 35px;
+        margin: 25px 10px;
+    }
+}
